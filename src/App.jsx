@@ -16,7 +16,7 @@ import ThemeToggle from './components/ThemeToggle';
 function App() {
   return (
     <ReactLenis root>
-      <div className="relative min-h-screen bg-background text-primary transition-colors duration-500">
+      <div className="relative min-h-screen w-full overflow-x-hidden bg-background text-primary transition-colors duration-500">
         <ThemeToggle />
         <HeroBackground />
         

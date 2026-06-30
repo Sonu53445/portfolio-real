@@ -56,7 +56,7 @@ const Contact = () => {
     <section id="contact" ref={containerRef} className="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto z-10 relative border-t border-[#1C1C1C]">
       <div className="flex flex-col md:flex-row gap-8 md:gap-20">
         <div className="shrink-0 md:w-24 contact-header">
-          <h2 className="text-[#A1A1AA] text-sm tracking-[0.3em] uppercase flex flex-col gap-2 md:gap-4">
+          <h2 className="text-white text-sm tracking-[0.3em] uppercase flex flex-col gap-2 md:gap-4">
             <span className="text-white text-base md:text-lg">06</span>
             <span>CONTACT</span>
           </h2>

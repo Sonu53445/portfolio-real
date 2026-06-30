@@ -47,7 +47,7 @@ const Certifications = () => {
     <section id="certifications" ref={containerRef} className="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto z-10 relative border-t border-[#1C1C1C]">
       <div className="flex flex-col md:flex-row gap-8 md:gap-20">
         <div className="shrink-0 md:w-24 cert-header">
-          <h2 className="text-[#A1A1AA] text-sm tracking-[0.3em] uppercase flex flex-col gap-2 md:gap-4">
+          <h2 className="text-white text-sm tracking-[0.3em] uppercase flex flex-col gap-2 md:gap-4">
             <span className="text-white text-base md:text-lg">05</span>
             <span>CERTIFICATIONS</span>
           </h2>
@@ -66,7 +66,7 @@ const Certifications = () => {
                   {cert.title}
                 </GradientText>
               </div>
-              <p className="text-[#A1A1AA] text-xs tracking-widest uppercase">{cert.provider}</p>
+              <p className="text-white text-xs tracking-widest uppercase" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>{cert.provider}</p>
             </div>
           ))}
         </div>

@@ -48,9 +48,15 @@ export default function HeroBackground() {
       const img = images[frameIndex];
       if (!img || !img.complete || img.naturalWidth === 0) return;
 
-      // Set canvas size to exactly match the window dimensions
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      const dpr = window.devicePixelRatio || 1;
+      
+      // Set canvas physical size to match window dimensions multiplied by dpr
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      
+      // Scale canvas CSS size to fit window
+      canvas.style.width = `${window.innerWidth}px`;
+      canvas.style.height = `${window.innerHeight}px`;
 
       // Object-cover calculation for the canvas drawing
       const imgRatio = img.width / img.height;

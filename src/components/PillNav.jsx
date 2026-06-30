@@ -156,6 +156,12 @@ const PillNav = ({
     const newState = !isMobileMenuOpen;
     setIsMobileMenuOpen(newState);
 
+    if (newState) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
     const hamburger = hamburgerRef.current;
     const menu = mobileMenuRef.current;
 
