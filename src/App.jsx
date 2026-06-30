@@ -11,12 +11,13 @@ import Education from './components/Education';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ThemeToggle from './components/ThemeToggle';
 
 function App() {
   return (
     <ReactLenis root>
-      <div className="relative min-h-screen bg-[#050505] text-white">
-        
+      <div className="relative min-h-screen bg-background text-primary transition-colors duration-500">
+        <ThemeToggle />
         <HeroBackground />
         
         <Navbar />

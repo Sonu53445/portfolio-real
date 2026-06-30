@@ -47,27 +47,27 @@ const Hero = () => {
       </div>
 
       {/* Social Icons */}
-      <div className="absolute right-6 md:right-12 bottom-12 md:bottom-auto md:top-1/2 md:-translate-y-1/2 flex flex-row md:flex-col gap-6 text-[#A1A1AA]">
-        <a href="#" className="hero-social hover:text-white transition-colors"><FaGithub size={18} /></a>
-        <a href="https://linkedin.com/in/sonu-kumar-8a2683401" target="_blank" rel="noreferrer" className="hero-social hover:text-white transition-colors"><FaLinkedin size={18} /></a>
-        <a href="#" className="hero-social hover:text-white transition-colors"><FaInstagram size={18} /></a>
-        <a href="mailto:sonu8409566@gmail.com" className="hero-social hover:text-white transition-colors"><FaEnvelope size={18} /></a>
+      <div className="absolute right-6 md:right-12 bottom-12 md:bottom-auto md:top-1/2 md:-translate-y-1/2 flex flex-row md:flex-col gap-6 text-zinc-600">
+        <a href="#" className="hero-social hover:text-black transition-colors"><FaGithub size={18} /></a>
+        <a href="https://linkedin.com/in/sonu-kumar-8a2683401" target="_blank" rel="noreferrer" className="hero-social hover:text-black transition-colors"><FaLinkedin size={18} /></a>
+        <a href="#" className="hero-social hover:text-black transition-colors"><FaInstagram size={18} /></a>
+        <a href="mailto:sonu8409566@gmail.com" className="hero-social hover:text-black transition-colors"><FaEnvelope size={18} /></a>
       </div>
 
       {/* Main Content */}
       <div className="w-full max-w-7xl mx-auto flex flex-col z-10 pl-0 md:pl-12">
         <div className="overflow-hidden mb-4">
-          <p className="hero-reveal text-[#A1A1AA] tracking-[0.3em] text-xs uppercase font-medium">I Build</p>
+          <p className="hero-reveal text-zinc-600 tracking-[0.3em] text-xs uppercase font-medium">I Build</p>
         </div>
         <div className="overflow-hidden">
-          <h1 className="hero-reveal text-5xl md:text-7xl lg:text-[9rem] font-bold tracking-tighter leading-[0.9] text-white">
+          <h1 className="hero-reveal text-5xl md:text-7xl lg:text-[9rem] font-bold tracking-tighter leading-[0.9] text-black">
             SONU<br />KUMAR
           </h1>
         </div>
         <div className="overflow-hidden mt-6 md:mt-8">
-          <p className="hero-reveal text-base md:text-xl text-[#A1A1AA] font-light flex items-center gap-4">
+          <p className="hero-reveal text-base md:text-xl text-zinc-700 font-medium flex items-center gap-4">
             <Shuffle text="Web Developer" />
-            <span className="w-1.5 h-1.5 rounded-full bg-[#1C1C1C]"></span>
+            <span className="w-1.5 h-1.5 rounded-full bg-black"></span>
             <Shuffle text="AI UI Designer" />
           </p>
         </div>
