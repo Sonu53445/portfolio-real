@@ -20,7 +20,7 @@ const Certifications = () => {
         duration: 1,
         ease: 'power3.out'
       });
-      
+
       gsap.from('.cert-item', {
         scrollTrigger: {
           trigger: containerRef.current,
@@ -52,7 +52,7 @@ const Certifications = () => {
             <span>CERTIFICATIONS</span>
           </h2>
         </div>
-        
+
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {certs.map((cert, idx) => (
             <div key={idx} className="cert-item p-6 border border-[#1C1C1C] hover:border-[#333333] transition-colors duration-500 bg-[rgba(255,255,255,0.01)] group" style={{ borderRadius: '16px' }}>

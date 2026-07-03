@@ -48,6 +48,7 @@
 .magic-bento-card__header,
 .magic-bento-card__content {
   display: flex;
+  flex-direction: column;
   position: relative;
 }
 

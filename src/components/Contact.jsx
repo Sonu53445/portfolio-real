@@ -22,7 +22,7 @@ const Contact = () => {
         duration: 1,
         ease: 'power3.out'
       });
-      
+
       gsap.from('.contact-content', {
         scrollTrigger: {
           trigger: containerRef.current,
@@ -45,10 +45,10 @@ const Contact = () => {
     // Replace placeholders with real EmailJS IDs
     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formRef.current, 'YOUR_PUBLIC_KEY')
       .then((result) => {
-          setStatus('Message sent successfully.');
-          e.target.reset();
+        setStatus('Message sent successfully.');
+        e.target.reset();
       }, (error) => {
-          setStatus('Failed to send message. Please try again.');
+        setStatus('Failed to send message. Please try again.');
       });
   };
 
@@ -61,34 +61,34 @@ const Contact = () => {
             <span>CONTACT</span>
           </h2>
         </div>
-        
+
         <div className="w-full flex flex-col lg:flex-row gap-12 lg:gap-20 contact-content">
           <div className="flex flex-col gap-8 flex-1">
             <div>
-              <p className="text-[#A1A1AA] text-xs tracking-widest uppercase mb-2">Email</p>
-              <a href="mailto:sonu8409566@gmail.com" className="text-lg md:text-2xl text-white font-light hover:text-[#A1A1AA] transition-colors">sonu8409566@gmail.com</a>
+              <p className="text-white font-bold text-xs tracking-widest uppercase mb-2">Email</p>
+              <a href="mailto:sonu8409566@gmail.com" className="text-lg md:text-2xl text-white font-bold hover:opacity-70 transition-colors">sonu8409566@gmail.com</a>
             </div>
             <div>
-              <p className="text-[#A1A1AA] text-xs tracking-widest uppercase mb-2">Phone</p>
-              <p className="text-lg md:text-2xl text-white font-light">+91 8409566298</p>
+              <p className="text-white font-bold text-xs tracking-widest uppercase mb-2">Phone</p>
+              <p className="text-lg md:text-2xl text-white font-bold">+91 8409566298</p>
             </div>
             <div>
-              <p className="text-[#A1A1AA] text-xs tracking-widest uppercase mb-2">Location</p>
-              <p className="text-lg md:text-2xl text-white font-light">Greater Noida</p>
+              <p className="text-white font-bold text-xs tracking-widest uppercase mb-2">Location</p>
+              <p className="text-lg md:text-2xl text-white font-bold">Greater Noida</p>
             </div>
             <div>
-              <p className="text-[#A1A1AA] text-xs tracking-widest uppercase mb-2">Social</p>
-              <a href="https://linkedin.com/in/sonu-kumar-8a2683401" target="_blank" rel="noreferrer" className="text-lg md:text-2xl text-white font-light hover:text-[#A1A1AA] transition-colors">LinkedIn</a>
+              <p className="text-white font-bold text-xs tracking-widest uppercase mb-2">Social</p>
+              <a href="https://linkedin.com/in/sonu-kumar-8a2683401" target="_blank" rel="noreferrer" className="text-lg md:text-2xl text-white font-bold hover:opacity-70 transition-colors">LinkedIn</a>
             </div>
           </div>
-          
+
           <div className="flex-1">
             <form ref={formRef} onSubmit={sendEmail} className="flex flex-col gap-8">
               <input type="text" name="user_name" placeholder="Name" required className="bg-transparent border-b border-[#1C1C1C] py-3 text-white text-lg font-light focus:outline-none focus:border-white transition-colors placeholder:text-[#A1A1AA]" />
               <input type="email" name="user_email" placeholder="Email" required className="bg-transparent border-b border-[#1C1C1C] py-3 text-white text-lg font-light focus:outline-none focus:border-white transition-colors placeholder:text-[#A1A1AA]" />
               <input type="text" name="subject" placeholder="Subject" required className="bg-transparent border-b border-[#1C1C1C] py-3 text-white text-lg font-light focus:outline-none focus:border-white transition-colors placeholder:text-[#A1A1AA]" />
               <textarea name="message" placeholder="Message" rows="4" required className="bg-transparent border-b border-[#1C1C1C] py-3 text-white text-lg font-light focus:outline-none focus:border-white transition-colors resize-none placeholder:text-[#A1A1AA]"></textarea>
-              
+
               <button type="submit" className="mt-2 border border-[#1C1C1C] py-4 px-8 text-white tracking-widest text-xs hover:bg-white hover:text-black transition-colors duration-500 w-fit uppercase">
                 Send Message
               </button>

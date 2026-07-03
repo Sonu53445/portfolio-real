@@ -22,9 +22,9 @@ const Navbar = () => {
   ];
 
   return (
-    <div className={`fixed top-0 w-full z-50 transition-all duration-500 flex justify-center py-8 ${scrolled ? 'opacity-0 -translate-y-full pointer-events-none' : 'opacity-100 translate-y-0'}`}>
+    <div className={`fixed top-0 w-full z-50 transition-all duration-500 flex justify-start px-6 md:px-0 md:pl-24 lg:pl-32 py-4 ${scrolled ? 'opacity-0 -translate-y-full pointer-events-none' : 'opacity-100 translate-y-0'}`}>
       <PillNav
-        logo={<span className="text-2xl font-bold tracking-tighter text-black">SK</span>}
+        logo={<span className="text-2xl font-bold tracking-tighter text-white">SK</span>}
         items={navItems}
         baseColor="rgba(255, 255, 255, 0.7)" 
         pillColor="rgba(255, 255, 255, 1)"

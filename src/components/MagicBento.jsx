@@ -476,7 +476,7 @@ const MagicBento = ({
             <div className="flex flex-col justify-between h-full relative z-10">
               <div className="magic-bento-card__header mb-4 md:mb-8">
                 <h2 className="magic-bento-card__title text-xl md:text-2xl font-medium text-white tracking-tight">{item.title}</h2>
-                {item.desc && <p className="magic-bento-card__description text-[#A1A1AA] text-base leading-relaxed mt-2">{item.desc}</p>}
+                {item.desc && <p className="magic-bento-card__description text-white font-bold text-base leading-relaxed mt-2">{item.desc}</p>}
                 {item.provider && <p className="text-[#A1A1AA] text-xs tracking-widest uppercase mt-3">{item.provider}</p>}
               </div>
               {item.tech && item.tech.length > 0 && (

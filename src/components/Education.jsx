@@ -50,7 +50,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" ref={containerRef} className="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto z-10 relative border-t border-[#1C1C1C]">
+    <section id="education" ref={containerRef} className="py-16 md:py-28 px-6 md:px-12 max-w-7xl mx-auto z-10 relative border-t border-[#1C1C1C]">
       <div className="flex flex-col md:flex-row gap-8 md:gap-20">
         <div className="shrink-0 md:w-24 edu-header">
           <h2 className="text-white text-sm tracking-[0.3em] uppercase flex flex-col gap-2 md:gap-4">
@@ -59,7 +59,7 @@ const Education = () => {
           </h2>
         </div>
         
-        <div className="w-full flex flex-col gap-6 md:gap-8">
+        <div className="w-full lg:w-[55%] xl:w-[60%] flex flex-col gap-6 md:gap-8">
           {education.map((edu, idx) => (
             <div key={idx} className="edu-item">
               <BorderGlow
@@ -75,10 +75,10 @@ const Education = () => {
               >
                 <div className="p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 group">
                   <div className="flex flex-col gap-4">
-                    <h3 className="text-xl md:text-3xl text-white font-light transition-colors">{edu.degree}</h3>
-                    <p className="text-base md:text-lg text-[#A1A1AA] font-light">{edu.institute}</p>
+                    <h3 className="text-xl md:text-3xl text-white font-bold transition-colors">{edu.degree}</h3>
+                    <p className="text-base md:text-lg text-white font-bold">{edu.institute}</p>
                   </div>
-                  <div className="text-[#A1A1AA] text-sm md:text-base tracking-widest uppercase">
+                  <div className="text-white font-bold text-sm md:text-base tracking-widest uppercase">
                     {edu.year}
                   </div>
                 </div>

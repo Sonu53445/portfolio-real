@@ -23,8 +23,8 @@ function App() {
         <Navbar />
         <Hero />
         <About />
-        <Skills />
         <Projects />
+        <Skills />
         <Education />
         <Certifications />
         <Contact />

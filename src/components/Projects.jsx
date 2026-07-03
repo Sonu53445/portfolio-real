@@ -21,7 +21,7 @@ const Projects = () => {
         duration: 1,
         ease: 'power3.out'
       });
-      
+
       gsap.from('.project-card', {
         scrollTrigger: {
           trigger: containerRef.current,
@@ -61,17 +61,17 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" ref={containerRef} className="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto z-10 relative border-t border-[#1C1C1C]">
+    <section id="projects" ref={containerRef} className="py-16 md:py-28 px-6 md:px-12 max-w-7xl mx-auto z-10 relative border-t border-[#1C1C1C]">
       <div className="flex flex-col md:flex-row gap-8 md:gap-20">
         <div className="shrink-0 md:w-24 project-header">
           <h2 className="text-white text-sm tracking-[0.3em] uppercase flex flex-col gap-2 md:gap-4">
-            <span className="text-white text-base md:text-lg">03</span>
+            <span className="text-white text-base md:text-lg">02</span>
             <span>PROJECTS</span>
           </h2>
         </div>
-        
-        <div className="w-full">
-          <MagicBento 
+
+        <div className="w-full lg:w-[55%] xl:w-[60%]">
+          <MagicBento
             items={projects}
             textAutoHide={false}
             enableStars={true}

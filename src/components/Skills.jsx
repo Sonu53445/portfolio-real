@@ -31,7 +31,7 @@ const Skills = () => {
     },
     {
       title: 'Tools',
-      items: ['Power BI', 'Microsoft Excel', 'Git', 'GitHub', 'AI UI Design']
+      items: ['Power BI', 'Microsoft Excel', 'Git', 'GitHub', 'VS Code', 'Antigravity']
     },
     {
       title: 'Soft Skills',
@@ -40,15 +40,15 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" ref={containerRef} className="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto z-10 relative border-t border-[#1C1C1C]">
+    <section id="skills" ref={containerRef} className="py-16 md:py-28 px-6 md:px-12 max-w-7xl mx-auto z-10 relative border-t border-[#1C1C1C]">
       <div className="flex flex-col md:flex-row gap-8 md:gap-20">
         <div className="shrink-0 md:w-24 skill-category">
           <h2 className="text-white text-sm tracking-[0.3em] uppercase flex flex-col gap-2 md:gap-4">
-            <span className="text-white text-base md:text-lg">02</span>
+            <span className="text-white text-base md:text-lg">03</span>
             <span>SKILLS</span>
           </h2>
         </div>
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+        <div className="w-full lg:w-[55%] xl:w-[60%] grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
           {skillData.map((category, idx) => (
             <div key={idx} className="skill-category flex flex-col gap-6">
               <h3 className="text-lg md:text-xl text-white font-medium tracking-wide">{category.title}</h3>
