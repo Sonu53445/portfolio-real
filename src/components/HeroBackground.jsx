@@ -63,23 +63,16 @@ export default function HeroBackground() {
       const canvasRatio = canvas.width / canvas.height;
       let drawWidth, drawHeight, offsetX, offsetY;
 
-      if (canvasRatio > imgRatio) {
-        // Canvas is wider: fit to height
-        drawHeight = canvas.height;
-        drawWidth = canvas.height * imgRatio;
-        offsetY = 0;
-        // Anchor to the right edge
-        offsetX = canvas.width - drawWidth;
-      } else {
-        // Canvas is taller: fit to width
-        drawWidth = canvas.width;
-        drawHeight = canvas.width / imgRatio;
-        offsetX = 0;
-        // Center vertically
-        offsetY = (canvas.height - drawHeight) / 2;
-      }
+      // Always scale the image to match the height of the screen (immersive full-height)
+      drawHeight = canvas.height;
+      drawWidth = canvas.height * imgRatio;
+      offsetY = 0;
+      
+      // Always anchor to the right edge so the character is always visible,
+      // cropping the left side on mobile instead of creating letterboxing.
+      offsetX = canvas.width - drawWidth;
 
-      // Clear the canvas and draw the calculated image slice
+      // Clear the canvas before drawing so the red background can show through on the left
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
     };

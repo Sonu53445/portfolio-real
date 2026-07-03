@@ -47,7 +47,7 @@ const Hero = () => {
       </div>
 
       {/* Social Icons */}
-      <div className="absolute right-6 md:right-12 bottom-12 md:bottom-auto md:top-1/2 md:-translate-y-1/2 flex flex-row md:flex-col gap-6 text-white z-20">
+      <div className="absolute left-1/2 -translate-x-1/2 md:translate-x-0 md:left-auto md:right-12 bottom-12 md:bottom-auto md:top-1/2 md:-translate-y-1/2 flex flex-row md:flex-col gap-6 text-white z-20">
         <a href="https://github.com/Sonu53445" target="_blank" rel="noreferrer" className="hero-social hover:text-white transition-colors"><FaGithub size={18} /></a>
         <a href="https://linkedin.com/in/sonu-kumar-8a2683401" target="_blank" rel="noreferrer" className="hero-social hover:text-white transition-colors"><FaLinkedin size={18} /></a>
         <a href="#" target="_blank" rel="noreferrer" className="hero-social hover:text-white transition-colors"><FaInstagram size={18} /></a>
@@ -60,7 +60,7 @@ const Hero = () => {
           <p className="hero-reveal tracking-[0.3em] text-xs uppercase font-medium text-white">I Build</p>
         </div>
         <div className="overflow-hidden">
-          <h1 className="hero-reveal text-5xl md:text-7xl lg:text-[9rem] font-bold tracking-tighter leading-[0.9] text-white">
+          <h1 className="hero-reveal text-4xl sm:text-5xl md:text-7xl lg:text-[9rem] font-bold tracking-tighter leading-[0.9] text-white">
             SONU<br />KUMAR
           </h1>
         </div>

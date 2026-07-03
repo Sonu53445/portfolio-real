@@ -21,11 +21,10 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className={`fixed bottom-16 right-8 md:bottom-20 md:right-16 z-50 w-14 h-14 rounded-full shadow-lg backdrop-blur-md border transition-all duration-300 ease-in-out hover:scale-110 flex items-center justify-center gap-2 ${
-        isLight 
-          ? 'bg-white/80 border-gray-200 text-black hover:shadow-gray-200/50' 
+      className={`fixed bottom-16 right-8 md:bottom-20 md:right-16 z-50 w-14 h-14 rounded-full shadow-lg backdrop-blur-md border transition-all duration-300 ease-in-out hover:scale-110 flex items-center justify-center gap-2 ${isLight
+          ? 'bg-white/80 border-gray-200 text-black hover:shadow-gray-200/50'
           : 'bg-[#1a1a1a]/80 border-[#333] text-white hover:shadow-black/50'
-      }`}
+        }`}
       aria-label="Toggle Dark Mode"
     >
       {isLight ? (
